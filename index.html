@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="discord/skypeInvite.css"/>
+<link rel="stylesheet" href="discord/discordInvite.css"/>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<style>
+body {
+  background-image: url('imgs/bg2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<script src="discord/discordInvite.js"></script>
+<script>
+  discordInvite.init({
+  inviteCode: 'w5Zy6RcNeG',
+  title: 'Muffins Hangout',
+  miniMode: false,
+  joinText : 'Join',
+  joinedText: 'Joined',
+  introText: 'Join to download the latest cheats.',
+  hideIntro: false
+});
+discordInvite.render();
+  $('.skype-microphone').click(function(){
+  $('#icon').toggleClass('fa-microphone-slash');
+  window.open('https://discord.gg/w5Zy6RcNeG')
+});
+</script>
+<div id="discordInviteBox" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+<div align="center">
+<img src="../img2.wikia.nocookie.net/__cb20121231074133/ladygaga/images/2/23/Skype.PNG.png_%3b%20filename_%3dUTF-8%27%27Skype.PNG.png"><br><br>
+   <div class="skype skype-microphone"><i id="icon" class="fa fa-microphone fa-2x"></i></div><br>
+</div>
+</body>
+
+</html>
